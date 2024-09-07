@@ -1,1 +1,1 @@
-Java-OCR-tess4j(tesseract)
+# **Java-OCR-tess4j (tesseract)**
