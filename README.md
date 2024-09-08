@@ -19,30 +19,41 @@ Before you begin, ensure you have the following installed:
 
 ## Installation
 
-### Clone the Repository
-
-To get started, clone the repository from GitHub:
+#### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/ocr-cli-tool.git
-cd ocr-cli-tool
+git clone https://github.com/senurah/java-tess4J-ocr.git
+cd java-tess4J-ocr
 ```
 
-### Download and Setup Tess4J
+#### 2. Download and Setup Tess4J
 
-Tess4J requires the Tesseract-OCR engine. You can download the necessary Tesseract language data files (`.traineddata` files) for the languages you want to use. These files should be placed in the `tessdata/` directory in your project.
+Ensure that the `tessdata` folder contains the correct `.traineddata` files for the languages you need (e.g., English, Sinhala).
 
-For example, download `eng.traineddata` (English) or `sin.traineddata` (Sinhala), and place them in the `tessdata/` folder.
-
-### Build the Project
-
-Use Maven to build the project and create a JAR file:
+#### 3. Build the Project
 
 ```bash
 mvn clean package
 ```
 
-This will generate a JAR file in the `target/` directory.
+This will create a JAR file in the `target/` directory.
+
+#### 4. **Configure Tesseract Data Path**
+
+In the `OCRProcessor.java` file, you need to set the correct path to the `tessdata` directory, which contains the trained language data files.
+
+Update the following line:
+
+```java
+this.tesseract.setDatapath("C:/Users/YourUsername/Project/java-ocr-tess4j/tessdata");
+```
+
+Replace the path with the location of your `tessdata` folder. For example:
+
+- For Windows: `C:/Users/YourUsername/Project/tessdata`
+- For Linux/Mac: `/home/YourUsername/Project/tessdata`
+
+This step is crucial to ensure that the correct language data is used for OCR.
 
 ### Running the Application
 
