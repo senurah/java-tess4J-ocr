@@ -19,7 +19,7 @@ public class OCRProcessor {
 
     public String extractTextFromImage2(File file) throws IOException, TesseractException {
         ITesseract instance = new Tesseract();
-        instance.setDatapath("./tessdata");
+        instance.setDatapath("C:\\Users\\Senura\\IdeaProjects\\java-ocr-tess4j\\tessdata");
         instance.setLanguage(language);
         BufferedImage image = ImageIO.read(file);
         return instance.doOCR(image);
@@ -27,7 +27,7 @@ public class OCRProcessor {
 
     public String extractTextFromImage(File file) throws TesseractException {
         ITesseract instance = new Tesseract();
-        instance.setDatapath("./tessdata");
+        instance.setDatapath("C:\\Users\\Senura\\IdeaProjects\\java-ocr-tess4j\\tessdata");
         instance.setLanguage(language);
 
         return instance.doOCR(file);
