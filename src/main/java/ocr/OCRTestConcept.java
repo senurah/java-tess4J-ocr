@@ -9,7 +9,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class ReadImages {
+public class OCRTestConcept {
     public static void main(String[] args) {
 
         ITesseract instance = new Tesseract();

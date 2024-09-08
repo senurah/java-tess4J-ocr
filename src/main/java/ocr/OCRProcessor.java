@@ -20,6 +20,8 @@ public class OCRProcessor {
 
         // Set the correct datapath to your tessdata folder
         this.tesseract.setDatapath("C:/Users/Senura/IdeaProjects/java-ocr-tess4j/tessdata");
+        //this.tesseract.setDatapath("./tessdata");
+
 
         // Set the language for Tesseract
         this.tesseract.setLanguage(this.language);
