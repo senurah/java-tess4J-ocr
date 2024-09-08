@@ -1,4 +1,4 @@
-package ocr.demo;
+package ocr;
 
 import net.sourceforge.tess4j.ITesseract;
 import net.sourceforge.tess4j.Tesseract;
