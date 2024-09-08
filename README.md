@@ -1,7 +1,5 @@
 # Java OCR CLI Tool using Tess4J
 
----
-
 This project is a **Command-Line Interface (CLI)** application for extracting text from images and PDFs using the **Tess4J** library, which provides Tesseract-based Optical Character Recognition (OCR) functionality. The extracted text can be copied to the clipboard for easy use.
 
 ## Features
@@ -114,8 +112,7 @@ Contributions are welcome! Feel free to open issues or submit pull requests if y
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
+## Contact
+For any questions or suggestions, feel free to open an issue or contact me at [email](neophytetoskill@gmail.com).
+
 ---
-
-You can adapt this README file further based on your specific needs or the structure of your repository.
-
-Let me know if you'd like to make any adjustments or if you're ready to publish it to GitHub!
