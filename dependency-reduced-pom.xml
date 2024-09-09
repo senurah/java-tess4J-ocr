@@ -38,9 +38,20 @@
         <groupId>org.openjfx</groupId>
         <artifactId>javafx-maven-plugin</artifactId>
         <version>0.0.8</version>
-        <configuration>
-          <mainClass>ocr.ReadImagesGUI</mainClass>
-        </configuration>
+        <executions>
+          <execution>
+            <id>default-cli</id>
+            <configuration>
+              <mainClass>ocr.ReadImagesGUI</mainClass>
+              <launcher>app</launcher>
+              <jlinkZipName>app</jlinkZipName>
+              <jlinkImageName>app</jlinkImageName>
+              <noManPages>true</noManPages>
+              <stripDebug>true</stripDebug>
+              <noHeaderFiles>true</noHeaderFiles>
+            </configuration>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>
