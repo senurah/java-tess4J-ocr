@@ -2,6 +2,7 @@ package ocr;
 
 import net.sourceforge.tess4j.Tesseract;
 import net.sourceforge.tess4j.TesseractException;
+import org.apache.pdfbox.Loader;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.rendering.PDFRenderer;
 
@@ -32,7 +33,7 @@ public class OCRProcessor {
 
     // Method to process PDFs using PDFBox and Tess4J
     public String extractTextFromPDF(File pdfFile) throws IOException, TesseractException {
-        PDDocument document = PDDocument.load(pdfFile);
+        PDDocument document = Loader.loadPDF(pdfFile);
         PDFRenderer pdfRenderer = new PDFRenderer(document);
 
         StringBuilder resultText = new StringBuilder();
