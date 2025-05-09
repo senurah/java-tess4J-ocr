@@ -49,6 +49,8 @@ public class OCRTestConcept {
             }
         }
 
+        //added
+
         try {
             BufferedImage image = ImageIO.read(new File(path)); // Replace with actual path
             String result = instance.doOCR(image);
